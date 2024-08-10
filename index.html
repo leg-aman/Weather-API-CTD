@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTD Weather API</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- roots -->
+    <div id="root">
+        <div class="search grid-item">
+            <form action="" id="form">
+                <input type="text" name="" id="" placeholder="Barlin, Germany">
+                <span><input id="submit" type="submit"></span>
+            </form>
+
+        </div>
+
+        <div class="temp grid-item">
+            <div class="temp-detail widget">
+                <div>
+                    <span class="material-symbols-outlined">sunny</span>
+                    <span class="degree" id="current_weather1">Sunny</span>
+
+                    <div><span class="material-symbols-outlined up">
+                            arrow_drop_up
+                        </span><span>26&deg;</span> <span class="material-symbols-outlined down ">
+                            arrow_drop_down
+                        </span><span>18&deg;</span></div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- content-middle -->
+        <div class="date grid-item">
+            <div class="clock">
+                <span class="clock-text">
+                    <span class="degree current_time">10:35</span>
+                    <span class="date_month">AM - SUN, 7 MAY</span>
+                    <div class="city_name "><span class="material-symbols-outlined">
+                            location_on
+                        </span>Tokyo, Japan</div>
+                </span>
+
+            </div>
+        </div>
+
+
+        <!-- content-right -->
+        <div class="more-info grid-item">
+
+            <div class="widget">
+                <div>
+                    <span class="icon current_temp_min">15&deg;</span>
+                    <span class="degree current_temp_max">26&deg;</span>
+                    <div class="country more-info-flex">
+                        <div>wind speed: 5m/s</div>
+                        <div>wind direction: NE</div>
+                        <div>percipation: 3%</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="week grid-item">
+            <div class="wrapper" id="dailyTemp">
+                <!-- <div class="widget" id="weekTemp"> -->
+                <!-- <div>
+                        <div class="icon">18&deg;</div>
+                        <div class="degree">28&deg;</div>
+                        <div class="country">Sunday</div>
+                    </div>
+                </div> -->
+                <!-- 
+                <div class="widget">
+                    <div>
+                        <div class="icon">sunday</div>
+                        <div class="degree">28&deg;</div>
+                        <div class="country">Monday</div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div>
+                        <div class="icon">sunday</div>
+                        <div class="degree">28&deg;</div>
+                        <div class="country">Tuesday</div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div>
+                        <div class="icon">sunday</div>
+                        <div class="degree">28&deg;</div>
+                        <div class="country">Wednesday</div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div>
+                        <div class="icon">sunday</div>
+                        <div class="degree">28&deg;</div>
+                        <div class="country">Thursday</div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div>
+                        <div class="icon">sunday</div>
+                        <div class="degree">28&deg;</div>
+                        <div class="country">Friday</div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div>
+                        <div class="icon">sunday</div>
+                        <div class="degree">28&deg;</div>
+                        <div class="country">Saturday</div>
+                    </div>
+                </div> -->
+                <!-- </div> -->
+            </div>
+        </div>
+        <script src="./js/app.js"></script>
+</body>
+
+</html>

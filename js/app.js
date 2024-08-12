@@ -84,6 +84,10 @@ async function find_city_coordinate(event) {
         }
 
         dailyTemp.innerHTML = content;
+        const btn = document.querySelectorAll('[btn]');
+        btn.forEach(b =>{
+            b.classList.remove('hidden')
+        })
     } catch (error) {
         console.error('Error:', error);
     }

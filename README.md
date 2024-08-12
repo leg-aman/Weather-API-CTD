@@ -9,8 +9,11 @@ This is a simple weather app that lets you check the weather in any city. It sho
 
 ### How to Use
 <ol>
-  <li>Clone the Repository</li>
-  <li>Open the App</li>
+  <li><b>Clone the Repository</b></li>
+  ```bash
+  git clone https://github.com/yourusername/weather-application.git
+```
+  <li><b>Open the App</b></li>
 </ol>
 
 Weather Conditions: See details like precipitation and wind speed.

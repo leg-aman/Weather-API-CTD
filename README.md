@@ -17,7 +17,7 @@ This is a simple weather app that lets you check the weather in any city. It sho
   
 Open index.html in your web browser.
 </ol>
-## Files
+<h2>Files</h2>
 index.html: The main page of the app.
 style.css: Styles the app.
 app.js: Contains the JavaScript code for getting weather data and updating the page.

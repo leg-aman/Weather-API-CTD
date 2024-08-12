@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 @font-face {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -12,15 +11,9 @@ html,
 body {
     margin: 0;
     min-height: 100%;
-    min-width: 100%;
     padding: 0;
-    /* background-color: #818181; */
-    /* background-color: #eee; */
-    /* background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%); */
-    /* background: #2c3e50;  */
-    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);  
-    background: linear-gradient(to right, #3498db, #2c3e50); 
-    /* background-color: #3f3f3f; */
+    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);
+    background: linear-gradient(to right, #3498db, #2c3e50);
 }
 
 body {
@@ -35,15 +28,13 @@ body {
 
 #root {
     display: grid;
-    /* grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto; */
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
-    /* background-color: #2196F3; */
     padding: 10px;
 }
 
 .grid-item {
-    /* background-color: #8cf022; */
+
     text-align: center;
     padding: 20px;
     font-size: 18px;
@@ -52,7 +43,12 @@ body {
 
 .search {
     grid-row: 1;
-    grid-column: 1/ span 12;
+    grid-column: 1/ span 10;
+}
+
+.toggle-buttons {
+    grid-row: 1;
+    grid-column: 10/span 2;
 }
 
 .temp {
@@ -118,7 +114,7 @@ input {
     margin: 5px;
     justify-content: center;
     align-items: center;
-    /* background: #f00; */
+
     width: 300px;
     height: 300px;
     flex-shrink: 0;
@@ -130,15 +126,13 @@ input {
 
 
 .wrapper {
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
+
     width: 100vw;
     height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* margin: -150px 0 0 -317.578px; */
+
 }
 
 .widget {
@@ -149,9 +143,8 @@ input {
     height: 100px;
     padding: 36px;
     border-radius: 6px;
-    
-    /* background-color: #fff; */
-    /* box-shadow: 0 0 15px #ddd; */
+
+
 }
 
 .widget>div {
@@ -181,201 +174,42 @@ input {
     float: right;
 }
 
-/* .down{
-    color: #ff3700;
-}
-.up{
-    color: #11ff00;
-    
-} */
 
-.dailyWidget{
-    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+.dailyWidget {
+
     box-shadow: rgba(255, 252, 252, 0.16) 0px 1px 4px;
-    /* box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px; */
     border: 0.5px solid gray;
 }
 
- .dailyWidget:first-child{
+.dailyWidget:first-child {
     background-color: #000000;
     display: none;
-} 
+}
+
 .city_name {
-    display: flex;                /* Enables flexbox layout */
-    align-items: center;          /* Vertically centers items */
-    justify-content: center;      /* Horizontally centers items */
-    text-align: center;           /* Centers text inside the div */
-    padding: 10px;                /* Optional: Add some padding if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
 }
 
 .material-symbols-outlined {
-    margin-right: 8px;            /* Optional: Add space between the icon and text */
+    margin-right: 8px;
 }
-.more-info-flex{
+
+.more-info-flex {
     display: flex;
     flex-direction: column;
-    
+
 }
-
-/* mobile responsive */
-/* Media Queries */
-/* @media (max-width: 768px) {
-    #root {
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    .temp, .date, .more-info, .week {
-        grid-column: 1 / span 6;
-    }
-
-    input {
-        width: 100%;
-    }
-
-    .widget {
-        width: 80px;
-        height: 80px;
-        padding: 20px;
-    }
-
-    .degree {
-        font-size: 2.5em;
-    }
-}
-
-@media (max-width: 480px) {
-    #root {
-        grid-template-columns: 1fr;
-    }
-
-    .search, .temp, .date, .more-info, .week {
-        grid-column: 1 / span 1;
-    }
-
-    input {
-        width: 100%;
-        height: 35px;
-    }
-
-    #submit {
-        width: 100%;
-        height: 35px;
-    }
-
-    .widget {
-        width: 60px;
-        height: 60px;
-        padding: 16px;
-    }
-
-    .degree {
-        font-size: 2em;
-    }
-} */
-
-
-/* Media Queries for Responsive Grid Layout */
-/* @media (max-width: 768px) {
-    #root {
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    .search {
-        grid-row: 1;
-        grid-column: 1 / span 6;
-    }
-
-    .temp {
-        grid-row: 2;
-        grid-column: 1 / span 6;
-    }
-
-    .date {
-        grid-row: 3;
-        grid-column: 1 / span 6;
-    }
-
-    .more-info {
-        grid-row: 4;
-        grid-column: 1 / span 6;
-    }
-
-    .week {
-        grid-row: 5;
-        grid-column: 1 / span 6;
-    }
-
-    input {
-        width: 100%;
-    }
-
-    .widget {
-        width: 80px;
-        height: 80px;
-        padding: 20px;
-    }
-
-    .degree {
-        font-size: 2.5em;
-    }
-}
-
-@media (max-width: 480px) {
-    #root {
-        grid-template-columns: 1fr;
-    }
-
-    .search {
-        grid-row: 1;
-        grid-column: 1;
-    }
-
-    .temp {
-        grid-row: 2;
-        grid-column: 1;
-    }
-
-    .date {
-        grid-row: 3;
-        grid-column: 1;
-    }
-
-    .more-info {
-        grid-row: 4;
-        grid-column: 1;
-    }
-
-    .week {
-        grid-row: 5;
-        grid-column: 1;
-    }
-
-    input {
-        width: 100%;
-        height: 35px;
-    }
-
-    #submit {
-        width: 100%;
-        height: 35px;
-    }
-
-    .widget {
-        width: 60px;
-        height: 60px;
-        padding: 16px;
-    }
-
-    .degree {
-        font-size: 2em;
-    }
-} */
 
 /* Media Queries for Responsive Grid Layout */
 @media (max-width: 768px) {
     #root {
         grid-template-columns: repeat(6, 1fr);
-        justify-items: center; /* Center grid items horizontally */
+        justify-items: center;
+        /* Center grid items horizontally */
     }
 
     .search {
@@ -421,12 +255,18 @@ input {
 @media (max-width: 480px) {
     #root {
         grid-template-columns: 1fr;
-        justify-items: center; /* Center grid items horizontally */
+        justify-items: center;
+        /* Center grid items horizontally */
     }
 
-    .search, .temp, .date, .more-info, .week {
+    .search,
+    .temp,
+    .date,
+    .more-info,
+    .week {
         grid-column: 1;
-        text-align: center; /* Center text inside each grid item */
+        text-align: center;
+        /* Center text inside each grid item */
     }
 
     input {
@@ -449,10 +289,10 @@ input {
         font-size: 2em;
     }
 
-    /* Ensure .widget and .clock-text are centered */
-    .widget, .clock-text {
+    .widget,
+    .clock-text {
         display: flex;
-        justify-content: center; /* Center content horizontally */
-        align-items: center; /* Center content vertically */
+        justify-content: center;
+        align-items: center;
     }
 }

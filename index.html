@@ -20,12 +20,15 @@
             </form>
 
         </div>
+        <div class="toggle-buttons grid-item">
+            <button id="tempButton">Temperature</button>
+            <button id="conditionButton">precipitation</button>
+        </div>
         <!-- content-left -->
         <div class="temp grid-item">
             <div class="temp-detail widget">
                 <div>
-                    <span class="degree" id="current_weather1"></span>
-                    <i class="wi wi-day-sunny"></i>
+                    <h2  id="current_weather1"></h2>
                     <p id="tempFeels"></p>
                 </div>
             </div>
@@ -35,8 +38,8 @@
         <div class="date grid-item">
             <div class="clock">
                 <span class="clock-text">
-                    <span class="degree current_time">10:35</span>
-                    <span class="date_month">AM - SUN, 7 MAY</span>
+                    <span class="degree current_time"></span>
+                    <span class="date_month"></span>
                     <div class="city_name "><span class="material-symbols-outlined">
                             location_on
                         </span><span id="cityName"></span></div>
@@ -62,6 +65,7 @@
             </div>
 
         </div>
+        <!-- weekly weather data -->
         <div class="week grid-item">
             <div class="wrapper" id="dailyTemp">
             </div>

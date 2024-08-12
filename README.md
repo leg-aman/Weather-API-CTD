@@ -14,6 +14,11 @@ This is a simple weather app that lets you check the weather in any city. It sho
   git clone https://github.com/yourusername/weather-application.git
 ```
   <li><b>Open the App</b></li>
+  ```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 </ol>
 
 Weather Conditions: See details like precipitation and wind speed.

@@ -1,24 +1,22 @@
 # Weather-API-CTD
 This is a simple weather app that lets you check the weather in any city. It shows current weather, daily temperatures, and other weather details.
-### Features
+**Features**
 <ul>
   <li>Check Current Weather: Enter a city name to see the current weather.</li>
   <li>Daily Temperatures: View the high and low temperatures for the next week.</li>
   <li>Weather Conditions: See details like precipitation and wind speed.</li>
 </ul>
 
-### How to Use
+**How to Use**
 <ol>
   <li><b>Clone the Repository</b></li>
   ```bash
   git clone https://github.com/yourusername/weather-application.git
 ```
   <li><b>Open the App</b></li>
-  ```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+  ```bash
+    git clone https://github.com/username/repository.git
+    ```
 </ol>
 
 Weather Conditions: See details like precipitation and wind speed.

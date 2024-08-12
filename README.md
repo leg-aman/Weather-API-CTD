@@ -15,14 +15,13 @@ This is a simple weather app that lets you check the weather in any city. It sho
 
   <li><b>Open the App</b></li>
   
-
 Open index.html in your web browser.
 </ol>
-**Files**
+## Files
 index.html: The main page of the app.
 style.css: Styles the app.
 app.js: Contains the JavaScript code for getting weather data and updating the page.
-**How It Works**
+# How It Works
 Enter a City Name: Type the name of a city and click "Submit."
 See the Weather: The app will show the current weather, temperature, and other details.
 Daily Forecast: Click the "Temperature" button to see the high and low temperatures for the next week.

@@ -7,6 +7,11 @@ This is a simple weather app that lets you check the weather in any city. It sho
   <li>Weather Conditions: See details like precipitation and wind speed.</li>
 </ul>
 
+### How to Use
+<ol>
+  <li>Clone the Repository</li>
+  <li>Open the App</li>
+</ol>
 
 Weather Conditions: See details like precipitation and wind speed.
 ### Temprature info

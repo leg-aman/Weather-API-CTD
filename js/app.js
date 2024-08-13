@@ -128,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         dailyTemp.innerHTML = content;
+            dailyTemp.classList.add("active");
         } catch (error) {
             console.error('Error:', error);
         }

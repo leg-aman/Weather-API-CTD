@@ -1,6 +1,7 @@
 # Weather-API-CTD
 This is a simple weather app that lets you check the weather in any city. It shows current weather, daily temperatures, and other weather details.
-<p>[weather-API-CTD](https://leg-aman.github.io/Weather-API-CTD/)</p>
+[weather-API-CTD](https://leg-aman.github.io/Weather-API-CTD/)
+<br>
 **Features**
 <ul>
   <li>Check Current Weather: Enter a city name to see the current weather.</li>

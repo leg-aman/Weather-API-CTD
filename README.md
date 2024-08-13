@@ -13,7 +13,7 @@ This is a simple weather app that lets you check the weather in any city. It sho
 <ol>
   <li><b>Clone the Repository</b></li>
   
-  git clone https://github.com/yourusername/weather-application.git
+  git clone https://github.com/leg-aman/Weather-API-CTD.git
 
   <li><b>Open the App</b></li>
   
